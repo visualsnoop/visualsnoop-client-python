@@ -18,7 +18,7 @@ setup(
     name='visualsnoop',
     version=version,
 
-    description='VisualSnoop client module for Python',
+    description='VisualSnoop Client module for Python',
     long_description=long_description,
 
     url='https://github.com/visualsnoop/visualsnoop-client-python',
@@ -43,7 +43,7 @@ setup(
         'Programming Language :: Python :: 3.4',
     ],
 
-    keywords='visualsnoop',
+    keywords='VisualSnoop image search Python client HTTP RESTful',
 
     packages=find_packages(exclude=['docs', 'tests*']),
 
