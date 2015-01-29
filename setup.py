@@ -9,9 +9,6 @@ here = path.abspath(path.dirname(__file__))
 with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
     long_description = f.read()
 
-with open(path.join(here, 'LICENSE.rst'), encoding='utf-8') as f:
-    license = f.read()
-
 version = __import__('visualsnoop').__version__
 
 setup(
@@ -26,7 +23,7 @@ setup(
     author='Janoš Guljaš',
     author_email='janos@visualsnoop.com',
 
-    license=license,
+    license='BSD',
 
     classifiers=[
         'Development Status :: 4 - Beta',
