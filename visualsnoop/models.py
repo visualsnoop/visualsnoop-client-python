@@ -134,15 +134,15 @@ class Collection(object):
         response = self.session.post(url, data=image, timeout=timeout)
         return response.json()
 
-    def get_images(self, page=1, count=None, timeout=None):
-        """List images in collection.
+    def get_images(self, start=None, count=None, timeout=None):
+        """List images in collection sorted by time.
 
-        :param page: Page number.
-        :param count: Number of images per page.
+        :param start: Image ID from which to start the listing.
+        :param count: Number of images in listing.
         """
 
         url = '{}/images'.format(self.endpoint)
-        params = {'page': page}
+        params = {'start': start}
         if count:
             params['count'] = count
         response = self.session.get(url, params=params, timeout=timeout)

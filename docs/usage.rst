@@ -107,9 +107,9 @@ Verifying images by ID
         'collection_id': '6b7c9142',
         'image_id': 'myid12',
         'message': 'OK',
-        'status': 200,
+        'status': 200
     }
-    >>> collection.get_images(page=1)
+    >>> collection.get_images()
     {
         'collection_id': '6b7c9142',
         'status': 200,
@@ -123,7 +123,8 @@ Verifying images by ID
                 'image_time': '2015-01-25T20:47:10.021689+00:00',
                 'id': 'myid12'
             }
-        ]
+        ],
+        'next_image_id': None
     }
 
 Deleting images by ID
